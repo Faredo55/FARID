@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Image Gallery</title>
+        <link rel="stylesheet" href="gallery.css">
+    </head>
+    <body>
+        <div class="banner">
+            <div class="navbar">
+            <img src="image-removebg-preview.png" class="logo">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Biodata.html">Biodata</a></li>
+                <li><a href="edu.html">Education</a></li>
+                <li><a href="family.html">Family</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+            </div>
+            <div class="full-img" id="fullImgBox">
+                <img src="images/photo_15_2023-01-14_16-11-04.jpg" id="fullImg">
+                <span onclick="closeFullImg()">X</span>
+            </div>
+            <div class="img-gallery">
+                <img src="images/photo_15_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_19_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_17_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_18_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_2_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_5_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_6_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_7_2023-01-14_16-11-04.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_1_2023-01-14_22-59-05.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+                <img src="images/photo_2_2023-01-14_22-59-05.jpg" width="500" height="300" onclick="openFullImg(this.src)">
+            </div>
+
+            <script>
+
+                var fullImgBox = document.getElementById("fullImgBox");
+                var fullImg = document.getElementById("fullImg");
+
+                function openFullImg(pic){
+                    fullImgBox.style.display = "flex";
+                    fullImg.src = pic
+                }
+
+                function closeFullImg(){
+                    fullImgBox.style.display = "none";
+                }
+
+            </script>
+    </body>
+</html>
